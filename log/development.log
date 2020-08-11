@@ -547,3 +547,107 @@ Processing by SchoolClassesController#show as HTML
 Completed 200 OK in 20ms (Views: 16.9ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/school_classes/new" for ::1 at 2020-08-10 19:33:28 -0500
+Processing by SchoolClassesController#new as HTML
+  Rendering school_classes/new.html.erb within layouts/application
+  Rendered school_classes/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 45ms (Views: 33.1ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/school_classes" for ::1 at 2020-08-10 19:33:36 -0500
+Processing by SchoolClassesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NGjVghuvD0UgPhjzZpmayuNXVqqPTkpMqnIhTNo6qvRrwe2pyLs21cIq8YePLXhjYHwtMXgjsNcVOCNkCPAnXQ==", "school_class"=>{"title"=>"Physics", "room_number"=>"290"}, "commit"=>"Create School class"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "school_classes" ("title", "room_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Physics"], ["room_number", 290], ["created_at", "2020-08-11 00:33:36.631347"], ["updated_at", "2020-08-11 00:33:36.631347"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/school_classes/2
+Completed 302 Found in 19ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/school_classes/2" for ::1 at 2020-08-10 19:33:36 -0500
+Processing by SchoolClassesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSchoolClass Load (0.3ms)[0m  [1m[34mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering school_classes/show.html.erb within layouts/application
+  Rendered school_classes/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 16.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/school_classes/new" for ::1 at 2020-08-10 19:33:40 -0500
+Processing by SchoolClassesController#new as HTML
+  Rendering school_classes/new.html.erb within layouts/application
+  Rendered school_classes/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/school_classes" for ::1 at 2020-08-10 19:33:47 -0500
+Processing by SchoolClassesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ocy4zqUgNUZmGEL7YOJmdmrqKogo7w8Wl5g214BoEqb+ZYDldjQM1oQMq4+JVoTf6cFRE9+C9Y0o0jT/UqKfDw==", "school_class"=>{"title"=>"Ballet", "room_number"=>"342"}, "commit"=>"Create School class"}
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "school_classes" ("title", "room_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Ballet"], ["room_number", 342], ["created_at", "2020-08-11 00:33:47.919725"], ["updated_at", "2020-08-11 00:33:47.919725"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/school_classes/3
+Completed 302 Found in 7ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/school_classes/3" for ::1 at 2020-08-10 19:33:47 -0500
+Processing by SchoolClassesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSchoolClass Load (0.2ms)[0m  [1m[34mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering school_classes/show.html.erb within layouts/application
+  Rendered school_classes/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 18ms (Views: 15.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students/new" for ::1 at 2020-08-10 19:33:52 -0500
+Processing by StudentsController#new as HTML
+  Rendering students/new.html.erb within layouts/application
+  Rendered students/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 32ms (Views: 21.8ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/students" for ::1 at 2020-08-10 19:34:00 -0500
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"98HY/Xu2xb5EYbz+J8OdPS2Iug9vBUqspm4dGfF+IE+oaODWqKL8LqZ1VYrOd3+UrqPBlJhosDcZJB8xI7St5g==", "student"=>{"first_name"=>"John", "last_name"=>"Braxton"}, "commit"=>"Create Student"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "John"], ["last_name", "Braxton"], ["created_at", "2020-08-11 00:34:00.549941"], ["updated_at", "2020-08-11 00:34:00.549941"]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/students/5
+Completed 302 Found in 7ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/students/5" for ::1 at 2020-08-10 19:34:00 -0500
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students/new" for ::1 at 2020-08-10 19:34:03 -0500
+Processing by StudentsController#new as HTML
+  Rendering students/new.html.erb within layouts/application
+  Rendered students/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/students" for ::1 at 2020-08-10 19:34:11 -0500
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Q0xyDTys8yxpiwUbNkbgdb5qXRltw/g6t+p+lt/9dugc5Uom77jKvIuf7G/f8gLcPUEmgpquAqEIoHy+DTf7QQ==", "student"=>{"first_name"=>"Teddy", "last_name"=>"Peeb"}, "commit"=>"Create Student"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Teddy"], ["last_name", "Peeb"], ["created_at", "2020-08-11 00:34:11.228537"], ["updated_at", "2020-08-11 00:34:11.228537"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/students/6
+Completed 302 Found in 7ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/students/6" for ::1 at 2020-08-10 19:34:11 -0500
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 24ms (Views: 21.3ms | ActiveRecord: 0.1ms)
+
+
